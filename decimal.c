@@ -11,7 +11,7 @@ int binary(int n)
         d+= l * b; 
         b = b * 2; 
     } 
-    printf (" Binary equivalent: %d",  d); 
+    printf (" Decimal equivalent: %d",  d); 
 
 }
 int main(){
