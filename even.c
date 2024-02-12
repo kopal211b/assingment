@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-void printEven(int n, int count) {
-    // Base case: If count reaches n, stop recursion
-    if (count == n) {
-        return;
+void Even(int n, int count) {
+        if (count == n) {
+        return 0;
     }
-
-    // Recursive step: Print the current even number and call the function recursively
     printf("%d ", 2 * count);
-    printEven(n, count + 1);
+    Even(n, count + 1);
 }
 
 int main() {
@@ -17,7 +14,6 @@ int main() {
     scanf("%d", &n);
 
     printf("First %d even numbers are: ", n);
-    printEven(n, 0); // Start with count = 0
-
+    Even(n, 0); 
     return 0;
 }
