@@ -18,6 +18,8 @@ int main(){
         if(m!=0 && (str[i]>='A' && str[i]<='Z'|| str[i]>='a' && str[i]<='z') ){
             c++;
         }
+          m=0;
     }
     printf("%d %d %d",vo,c,s-(vo+c));
+    return 0;
 }
